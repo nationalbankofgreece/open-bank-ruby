@@ -1,7 +1,7 @@
 require 'net/http'
 
 def nbg_client(secondary_key, path, method='GET', body=nil)
-    uri = URI('https://nbgdemo.azure-api.net/testnodeapi' + path)
+    uri = URI('https://nbgdemo.azure-api.net/nodeopenapi' + path)
     uri.query = URI.encode_www_form({
     })
 

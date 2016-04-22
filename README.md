@@ -13,7 +13,7 @@ In order to use `nbg.rb` open a Ruby terminal (e.g. `irb`) and import it with `r
 ```ruby
 2.2.0 :001 > require_relative 'nbg'
  => true
-2.2.0 :002 > response = nbg_client('mysecondarykey', '/api/banks/list', 'GET')
+2.2.0 :002 > response = nbg_client('mysecondarykey', '/api/banks/rest', 'GET')
  => #<Net::HTTPOK 200 OK readbody=true>
 2.2.0 :003 > puts response.body
 {"banks":[{"website":"215501 PIRB GR 215502 PIRB GR 222777 PBFX GR","full_name":"ΤΡΑΠΕΖΑ ΠΕΙΡΑΙΩΣ Α.Ε. (017)","short_name":"www.piraeusbank.gr","id":"5718e02aa230df500b16
